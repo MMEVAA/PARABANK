@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DialogContent extends ParentPage{
+import java.util.List;
 
-    public DialogContent(){
+public class DialogContent extends ParentPage {
 
-        PageFactory.initElements(GWD.getDriver(),this);
+    public DialogContent() {
+
+        PageFactory.initElements(GWD.getDriver(), this);
     }
 
     @FindBy(xpath = "//input[@id='customer.firstName']")
@@ -58,75 +60,43 @@ public class DialogContent extends ParentPage{
     public WebElement successMessage2;
 
 
+    @FindBy(id = "amount")
+    public WebElement loanAmountBox;
 
+    @FindBy(id = "downPayment")
+    public WebElement downPaymentBox;
 
+    @FindBy(name = "fromAccountId")
+    public List<WebElement> selectAccountNumber;
 
+    @FindBy(xpath = "//input[@value='Apply Now']")
+    public WebElement applyNowButton;
 
+    @FindBy(xpath = "//div[@ng-show='showResult']")
+    public WebElement loanReqProcessText;
 
+    @FindBy(xpath = "//div[@id='loanStatus']")
+    public WebElement approvedText;
 
+    @FindBy(xpath = "//a[contains(text(),'Account Number')]")
+    public WebElement newAccountNumberBtn;
 
+    @FindBy(xpath = "//h1[text()='Account Details']")
+    public WebElement accountDetailsText;
 
+    @FindBy(xpath = "//td[text()='LOAN']")
+    public WebElement loanAccountText;
 
+    @FindBy(xpath = "//td[text()='$2,000.00']")
+    public WebElement balanceText;
 
+    @FindBy(xpath = "//td[text()='No Transactions Found.']")
+    public WebElement noTransactionText;
 
+    @FindBy(xpath = "//div[@class='error']")
+    public WebElement deniedText;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//div[@class='error']/p")
+    public WebElement errorMessage;
 }
+
