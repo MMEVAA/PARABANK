@@ -48,6 +48,63 @@ public class LeftNav extends ParentPage {
     @FindBy(xpath = "//a[text()='Request Loan']")
     public WebElement requestLoanBtn;
 
+    @FindBy(linkText= "Bill Pay")
+    public WebElement billPayButton;
+
+    @FindBy(xpath= "//input[@name='payee.name']")
+    public WebElement payeNameInput;
+
+    @FindBy(xpath= "//input[@name='payee.address.street']")
+    public WebElement addressInput;
+
+    @FindBy(xpath= "//input[@name='payee.address.city']")
+    public WebElement cityInput;
+
+    @FindBy(xpath= "//input[@name='payee.address.state']")
+    public WebElement stateInput;
+
+    @FindBy(xpath= "//input[@name='payee.address.zipCode']")
+    public WebElement zipCodeInput;
+
+    @FindBy(xpath= "//input[@name='payee.phoneNumber']")
+    public WebElement phoneNumberInput;
+
+    @FindBy(xpath= "//input[@name='payee.accountNumber']")
+    public WebElement accountNumberInput;
+
+    @FindBy(xpath= "//input[@name='verifyAccount']")
+    public WebElement verifyAccountInput;
+
+    @FindBy(xpath= "//input[@name='amount']")
+    public WebElement amountInput;
+
+    @FindBy(xpath= " //input[@ value ='Send Payment']")
+    public WebElement sendPaymentButton;
+
+    @FindBy(xpath= " //h1[text()='Bill Payment Complete']")
+    public WebElement billPaymentCompleteText ;
+
+    @FindBy(xpath= " //span[@id='amount']")
+    public WebElement amountText ;
+
+    @FindBy(xpath= "//span[@id='fromAccountId']")
+    public WebElement accountNumberText ;
+
+    @FindBy(xpath= "//a[text()='13899']")
+    public WebElement  accountNumber;
+
+    @FindBy(linkText= "Accounts Overview")
+    public WebElement accountOverviewButton;
+
+    @FindBy(xpath= "//td[text()='10-25-2024']")
+    public WebElement paymentDate;
+
+    @FindBy(xpath= "//*[@id=\"transactionTable\"]/tbody/tr[1]/td[2]/a")
+    public WebElement paymentName;
+
+    @FindBy(xpath= "//*[@id=\"transactionTable\"]/tbody/tr[1]/td[3]")
+    public WebElement paymentAmount;
+
 
 }
 
