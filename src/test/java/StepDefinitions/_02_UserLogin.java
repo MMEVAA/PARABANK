@@ -17,8 +17,8 @@ public class _02_UserLogin {
 
     @When("The user types username and password and clicks on the login button")
     public void the_user_types_username_and_password_and_clicks_on_the_login_button() {
-        ln.loginUsername.sendKeys("Benedict");
-        ln.loginPassword.sendKeys("fatmanur1234");
+        ln.loginUsername.sendKeys("Mazlum");
+        ln.loginPassword.sendKeys("12345");
         ln.loginBtn.click();
     }
 
