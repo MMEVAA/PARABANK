@@ -8,7 +8,8 @@ import Utilities.GWD;
 
 @CucumberOptions(
         features = {"src/test/java/FeatureFiles"},
-        glue = {"StepDefinitions"}
+        glue = {"StepDefinitions"},
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 
 )
 
