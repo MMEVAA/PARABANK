@@ -43,7 +43,7 @@ public class _05_InterAccount {
         dc.verifyMessageContainsText(dc.transferText, " has been transferred from account #");
     }
 
-    @And("Navigate to Accounts Overview")
+    @And("Navigate to Accounts Overview dialog content")
     public void navigateToAccountsOverview() {
         dc.myClick(ln.accountsOverview);
     }

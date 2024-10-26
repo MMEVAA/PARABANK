@@ -14,7 +14,7 @@ public class _06_ContactInfo {
     @When("Enter username and password and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton() {
 
-        ln.mySendKeys(ln.usernameHomePage, "Mahmut");
+        ln.mySendKeys(ln.usernameHomePage, "Mazlum");
         ln.mySendKeys(ln.passwordHomePage, "12345");
         ln.myClick(ln.LogIn);
 

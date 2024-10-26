@@ -10,5 +10,5 @@ Feature: Inter Account Functionality
     When Create a Transfer Funds
     Then selects a sender and receiver account. in the amount field enters the amount and clicks the button
     And Success message should be displayed
-    And Navigate to Accounts Overview
+    And Navigate to Accounts Overview dialog content
     And The user clicks on the recipient account number. list the transfer date and the amount of money received in the account. credit verifies

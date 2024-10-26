@@ -18,14 +18,14 @@ public class _07_LoanApplication {
 
     @When("The user types username and password and clicks on the login button 1")
     public void the_user_types_username_and_password_and_clicks_on_the_login_button() {
-        ln.loginUsername.sendKeys("Duman");
-        ln.loginPassword.sendKeys("duman;)");
+        ln.loginUsername.sendKeys("Mazlum");
+        ln.loginPassword.sendKeys("12345");
         ln.loginBtn.click();
     }
 
     @Then("The user should login successfully 1")
     public void the_user_should_login_successfully() {
-        Assert.assertTrue(ln.welcomeControl.isDisplayed());
+       Assert.assertTrue(ln.welcomeControl.isDisplayed());
     }
 
     @When("The user clicks on Request Loan button")

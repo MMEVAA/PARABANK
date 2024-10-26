@@ -48,7 +48,7 @@ public class GWD {
         }
 
         if (threadDriver.get() != null) {
-          //  threadDriver.get().quit();
+            threadDriver.get().quit();
 
             WebDriver hattaki = threadDriver.get();
             hattaki = null;

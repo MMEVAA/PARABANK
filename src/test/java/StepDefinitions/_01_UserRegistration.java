@@ -30,15 +30,15 @@ public class _01_UserRegistration {
     @Then("Fill in login information")
     public void fillInLoginInformation() {
 
-        dc.mySendKeys(dc.firstName, "Osman");
-        dc.mySendKeys(dc.lastName, "Kaya");
+        dc.mySendKeys(dc.firstName, "Mazlum");
+        dc.mySendKeys(dc.lastName, "Özdemir");
         dc.mySendKeys(dc.address, "Nişantaşı");
         dc.mySendKeys(dc.city, "İstanbul");
         dc.mySendKeys(dc.state, "Türkiye");
         dc.mySendKeys(dc.zipCode, "55555");
         dc.mySendKeys(dc.phoneNumber, "05555555555");
         dc.mySendKeys(dc.ssn, "55555555555");
-        dc.mySendKeys(dc.username, "Osman");
+        dc.mySendKeys(dc.username, "Mazlum");
         dc.mySendKeys(dc.password, "12345");
         dc.mySendKeys(dc.repeatedPassword, "12345");
         dc.myClick(dc.registerButton);
