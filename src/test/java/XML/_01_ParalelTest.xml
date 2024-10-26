@@ -6,7 +6,7 @@
         <parameter name="browserTipi" value="edge"></parameter>
 
         <classes>
-            <class name="Runners.ParallelTest"></class>
+            <class name="Runners.ExtendReport"></class>
         </classes>
     </test>
 
@@ -14,7 +14,7 @@
         <parameter name="browserTipi" value="firefox"></parameter>
 
         <classes>
-            <class name="Runners.ParallelTest"></class>
+            <class name="Runners.ExtendReport"></class>
         </classes>
     </test>
 
