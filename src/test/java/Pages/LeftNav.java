@@ -106,6 +106,19 @@ public class LeftNav extends ParentPage {
     public WebElement paymentAmount;
 
 
+    @FindBy(xpath = "//a[text()='Open New Account']")
+    public WebElement openNewAccount;
+
+    @FindBy(xpath = "//a[text()='Transfer Funds']")
+    public WebElement transferFunds;
+
+    @FindBy(xpath = "//a[text()='Accounts Overview']")
+    public WebElement accountsOverview;
+
+
+
+
+
 }
 
 

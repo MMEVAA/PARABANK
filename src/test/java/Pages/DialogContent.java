@@ -98,5 +98,54 @@ public class DialogContent extends ParentPage {
 
     @FindBy(xpath = "//div[@class='error']/p")
     public WebElement errorMessage;
+
+
+
+    @FindBy(xpath = "//p[@class='smallText']")
+    public WebElement headText;
+
+    @FindBy(xpath = "//select[@id='type']")
+    public WebElement openNewAccountSelect;
+
+    @FindBy(xpath = "(//form//p//b)[2]")
+    public WebElement minimumbalanceMesage;
+
+    @FindBy(xpath = "//form//select[@id='fromAccountId']")
+    public WebElement fromAccount;
+
+    @FindBy(xpath = "//input[@value='Open New Account']")
+    public WebElement openNewAccountButton;
+
+    @FindBy(xpath = "//div[@id='openAccountResult']/p")
+    public WebElement congratulationsMessage;
+
+    @FindBy(xpath = "//a[@id='newAccountId']")
+    public WebElement newAccountNumber;
+
+    @FindBy(xpath = "//td[@id='accountId']")
+    public WebElement equalAccountNumber;
+
+    @FindBy(xpath = "//input[@id='amount']")
+    public WebElement amount;
+
+
+    @FindBy(xpath = "//form//select[@id='toAccountId']")
+    public WebElement toAccountTransfer;
+
+    @FindBy(xpath = "//input[@type='submit']")
+    public WebElement transferButton;
+
+    @FindBy(xpath = "//span[@id='amountResult']")
+    public WebElement amountResult;
+
+    @FindBy(xpath = "//span[@id='fromAccountIdResult']")
+    public WebElement fromAccountIdResult;
+
+    @FindBy(xpath = "//span[@id='toAccountIdResult']")
+    public WebElement toAccountIdResult;
+
+    @FindBy(xpath = "//*[text()=' has been transferred from account #']")
+    public WebElement transferText;
+
 }
 

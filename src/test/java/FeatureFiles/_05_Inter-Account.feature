@@ -2,8 +2,9 @@ Feature: Inter Account Functionality
 
   Background:
     Given Navigate to ParaBank
-    When Enter username and password and click login button
-    Then User should login successfully
+    When  The user types username and password and clicks on the login button
+    Then  The user should login successfully
+
 
   Scenario: Create a Transfer Funds
     When Create a Transfer Funds
